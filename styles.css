@@ -1670,26 +1670,49 @@ button, input, textarea, select {
     transform: translateY(0);
 }
 
-/* Pinterest style — variaciones de altura */
+/* Pinterest style — todas las imágenes del mismo tamaño */
 .masonry-grid.pinterest-style {
     grid-template-columns: repeat(4, 1fr);
     gap: 0.5rem;
 }
 
-.masonry-grid.pinterest-style .masonry-item:nth-child(odd) .gallery-card {
-    aspect-ratio: 3/4;
+.masonry-grid.pinterest-style .masonry-item .gallery-card {
+    aspect-ratio: 4/3;
 }
-.masonry-grid.pinterest-style .masonry-item:nth-child(even) .gallery-card {
-    aspect-ratio: 1/1;
+
+/* Galerías de 3 columnas fijas (Periodismo y GARRA) */
+#journalismMasonry,
+#garraMasonry {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#journalismMasonry .masonry-item .gallery-card,
+#garraMasonry .masonry-item .gallery-card {
+    aspect-ratio: 4/3;
+}
+
+/* Galería culinaria: 3 columnas uniformes en pantallas medianas */
+#kitchenMasonry {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#kitchenMasonry .masonry-item .gallery-card {
+    aspect-ratio: 4/3;
 }
 
 @media (max-width: 900px) {
     .masonry-grid { grid-template-columns: repeat(3, 1fr); }
     .masonry-grid.pinterest-style { grid-template-columns: repeat(3, 1fr); }
+    #journalismMasonry,
+    #garraMasonry { grid-template-columns: repeat(3, 1fr); }
+    #kitchenMasonry { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 600px) {
     .masonry-grid { grid-template-columns: repeat(2, 1fr); }
     .masonry-grid.pinterest-style { grid-template-columns: repeat(2, 1fr); }
+    #journalismMasonry,
+    #garraMasonry { grid-template-columns: repeat(2, 1fr); }
+    #kitchenMasonry { grid-template-columns: repeat(1, 1fr); }
 }
 
 /* Sports gallery section */
@@ -2055,7 +2078,8 @@ button, input, textarea, select {
 
 .podcast-player-wrap iframe {
     border-radius: var(--radius-sm) !important;
-    border: 1px solid var(--parchment);
+    border: none;
+    display: block;
 }
 
 @media (max-width: 768px) {
