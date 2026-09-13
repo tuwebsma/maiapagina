@@ -2446,24 +2446,17 @@ button, input, textarea, select {
 /* Invitación banner */
 .sponsor-invitation-banner {
     margin-top: 3rem;
-    background: var(--forest);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: var(--radius-sm);
-    padding: 3rem;
-}
-
-.sponsor-banner-content h3 {
-    font-size: 1.6rem;
-    font-weight: 600;
-    color: var(--text-on-dark);
-    margin-bottom: 0.8rem;
-}
-
-.sponsor-banner-content p {
-    font-size: 1rem;
-    color: var(--text-on-dark-muted);
-    max-width: 600px;
-    line-height: 1.75;
-    margin-bottom: 2rem;
+    padding: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+    background: rgba(44, 62, 53, 0.90);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 }
 
 .sponsor-actions {
@@ -2636,67 +2629,172 @@ button, input, textarea, select {
 }
 
 /* --------------------------------------------------------------------------
-   17. FOOTER
-   -------------------------------------------------------------------------- */
-.footer-minimal {
+/* ─── FOOTER MAIN ─────────────────────────────────────────────────────────── */
+.footer-main {
     background: var(--forest);
     color: var(--text-on-dark);
 }
 
 .footer-gold-line {
-    height: 2px;
-    background: var(--copper);
+    height: 3px;
+    background: linear-gradient(90deg, var(--copper), var(--gold), var(--copper));
     width: 100%;
 }
 
-.footer-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-    padding: 2.5rem var(--gutter);
-    flex-wrap: wrap;
+.footer-body {
+    padding: 4rem 0 2rem;
 }
 
-.footer-brand {}
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+/* Col 1: Marca */
+.footer-col-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
 
 .footer-name {
     font-family: var(--font-serif);
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 700;
     color: var(--text-on-dark);
     display: block;
-    margin-bottom: 0.3rem;
     letter-spacing: -0.02em;
+    line-height: 1.1;
 }
 
 .footer-tagline {
     font-family: var(--font-mono);
-    font-size: 0.68rem;
+    font-size: 0.65rem;
     color: var(--text-on-dark-muted);
     letter-spacing: 0.12em;
     text-transform: uppercase;
+    margin-top: 0.2rem;
 }
 
-.footer-credit {
-    text-align: right;
+.footer-location-label {
+    font-size: 0.82rem;
+    color: var(--copper-light);
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 0.5rem;
 }
 
-.footer-credit p {
-    font-size: 0.85rem;
+.footer-socials {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 1.2rem;
+}
+
+.footer-social-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--text-on-dark-muted);
-    margin-bottom: 0.8rem;
+    font-size: 1rem;
+    transition: all var(--t-fast);
+    text-decoration: none;
 }
 
-.footer-credit strong {
+.footer-social-btn:hover {
+    background: var(--copper);
+    border-color: var(--copper);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Col 2: Mapa */
+.footer-col-map {}
+
+.footer-col-title {
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--copper-light);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer-map-wrapper {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.footer-map-wrapper iframe {
+    display: block;
+}
+
+/* Col 3: Contacto */
+.footer-contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.footer-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    color: var(--text-on-dark-muted);
+    text-decoration: none;
+    font-size: 0.88rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: var(--radius-xs);
+    transition: all var(--t-fast);
+    border: 1px solid transparent;
+}
+
+.footer-contact-item:hover {
+    background: rgba(255,255,255,0.06);
+    border-color: rgba(255,255,255,0.1);
+    color: var(--text-on-dark);
+}
+
+.footer-contact-item i {
+    font-size: 1rem;
+    color: var(--copper-light);
+    width: 1.2rem;
+    text-align: center;
+}
+
+.footer-credit-block {
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding-top: 1.2rem;
+}
+
+.footer-credit-block p {
+    font-size: 0.82rem;
+    color: var(--text-on-dark-muted);
+    margin-bottom: 0.7rem;
+}
+
+.footer-credit-block strong {
     color: var(--copper-light);
 }
 
-.footer-actions {
+.footer-credit-links {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
-    justify-content: flex-end;
+    gap: 0.6rem;
 }
 
 .footer-icon-link {
@@ -2707,6 +2805,7 @@ button, input, textarea, select {
 
 .footer-icon-link:hover { color: var(--copper-light); }
 
+/* Footer Bottom */
 .footer-bottom {
     border-top: 1px solid rgba(255, 255, 255, 0.08);
     padding: 1.2rem 0;
@@ -2717,6 +2816,21 @@ button, input, textarea, select {
     font-size: 0.68rem;
     color: rgba(155, 173, 167, 0.5);
     letter-spacing: 0.06em;
+}
+
+@media (max-width: 900px) {
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer-col-map {
+        grid-column: 1 / -1;
+        order: -1;
+    }
+}
+
+@media (max-width: 540px) {
+    .footer-grid { grid-template-columns: 1fr; }
+    .footer-body { padding: 2.5rem 0 1.5rem; }
 }
 
 /* --------------------------------------------------------------------------
@@ -2947,13 +3061,6 @@ button, input, textarea, select {
     .garra-cta-box {
         flex-direction: column;
     }
-    .footer-content {
-        flex-direction: column;
-        align-items: flex-start;
-        text-align: left;
-    }
-    .footer-credit { text-align: left; }
-    .footer-actions { justify-content: flex-start; }
     .hero-indicators {
         flex-direction: row;
         bottom: 1.5rem;
