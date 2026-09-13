@@ -1980,12 +1980,13 @@ button, input, textarea, select {
     transition: background var(--t-fast);
 }
 
-.experience-card:last-child { border-right: none; }
+.experience-card:nth-child(3n) { border-right: none; }
 
 .experience-card:hover { background: var(--bone); }
 
 .experience-card:nth-child(4),
-.experience-card:nth-child(5) {
+.experience-card:nth-child(5),
+.experience-card:nth-child(6) {
     border-top: 1px solid var(--parchment);
 }
 
@@ -2302,7 +2303,7 @@ button, input, textarea, select {
 
 .specialties-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.25rem;
 }
 
