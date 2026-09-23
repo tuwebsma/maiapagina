@@ -247,6 +247,54 @@ const mapLocationsData = {
         badge: "Mundial Unificado U20",
         description: "Representando a la Selección Argentina, Maia compitió en el Campeonato Mundial Unificado de Trail Running en Tailandia (2022), midiéndose frente a las promesas y atletas de élite de todo el planeta.",
         achievement: '<i class="fa-solid fa-earth-asia"></i> Representante Selección Argentina U20 (2022)'
+    },
+    austria: {
+        title: "Innsbruck & Stubai, Austria",
+        badge: "Selección Argentina",
+        description: "Clasificada por CADA (Confederación Argentina de Atletismo) para representar a la Selección Nacional Argentina de Trail Running en el Mundial de Montaña y Trail Running 2023.",
+        achievement: '<i class="fa-solid fa-earth-europe"></i> Mundial de Montaña y Trail Running 2023 · 6 al 10 de junio de 2023'
+    },
+    ullum: {
+        title: "Ullum, San Juan",
+        badge: "Sudamericano 2022",
+        description: "Participación en el Campeonato Sudamericano de Trail Running 2022.",
+        achievement: '<i class="fa-solid fa-medal"></i> Subcampeona Sudamericana U20 Femenino'
+    },
+    tunja: {
+        title: "Tunja, Colombia",
+        badge: "Sudamericano 2023",
+        description: "Campeonato Sudamericano de Trail Running 2023.",
+        achievement: '<i class="fa-solid fa-award"></i> 9.º puesto U20 Femenino'
+    },
+    merlo: {
+        title: "Merlo, San Luis",
+        badge: "Sudamericano 2024",
+        description: "Campeonato Sudamericano de Trail Running 2024.",
+        achievement: '<i class="fa-solid fa-award"></i> 6.º puesto U20 Femenino'
+    },
+    samaipata: {
+        title: "Samaipata, Bolivia",
+        badge: "Sudamericano 2026",
+        description: "Campeonato Sudamericano de Trail Running 2026.",
+        achievement: '<i class="fa-solid fa-flag"></i> Participación categoría U20 Femenino'
+    },
+    lagoespejo: {
+        title: "Lago Espejo, Villa La Angostura",
+        badge: "Ocean Man Argentina 2024",
+        description: "Participación en Ocean Man Argentina 2024, Half Ocean Man (5 km).",
+        achievement: '<i class="fa-solid fa-trophy"></i> 6.ª General Femenina · 1.ª en su Categoría · 25/02/2024'
+    },
+    islahuemul: {
+        title: "Isla Huemul, Bariloche",
+        badge: "Triatlón Olímpico 2026",
+        description: "Triatlón Escape a la Isla Huemul, distancia Olímpica.",
+        achievement: '<i class="fa-solid fa-crown"></i> Ganadora General Femenina · 25/01/2026'
+    },
+    kvsanjuan: {
+        title: "Ultra Trail Merlo – Kilómetro Vertical",
+        badge: "Campeonato Nacional",
+        description: "Campeonato Nacional de Kilómetro Vertical Mayores.",
+        achievement: '<i class="fa-solid fa-medal"></i> Subcampeona Nacional · 06/06/2026'
     }
 };
 

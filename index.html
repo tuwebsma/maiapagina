@@ -519,22 +519,37 @@
                                         <stop offset="100%" stop-color="#B8F2E6" stop-opacity="0.8" />
                                     </linearGradient>
                                 </defs>
-                                <path d="M 280,380 Q 295,420 310,450" class="map-path" stroke="url(#routeGradient)" />
-                                <path d="M 280,380 Q 260,370 240,365" class="map-path" stroke="url(#routeGradient)" />
-                                <path d="M 280,380 Q 550,120 830,220" class="map-path flight-path"
-                                    stroke="url(#routeGradient)" />
+                                <!-- Rutas Regionales y Nacionales -->
+                                <path d="M 280,380 Q 245,365 210,360" class="map-path" stroke="url(#routeGradient)" />
+                                <path d="M 280,380 Q 265,400 255,414" class="map-path" stroke="url(#routeGradient)" />
+                                <path d="M 280,380 Q 295,410 305,444" class="map-path" stroke="url(#routeGradient)" />
+                                <path d="M 280,380 Q 320,430 350,474" class="map-path" stroke="url(#routeGradient)" />
+                                <path d="M 280,380 Q 315,355 335,324" class="map-path" stroke="url(#routeGradient)" />
+                                <path d="M 280,380 Q 260,340 255,306" class="map-path" stroke="url(#routeGradient)" />
+                                <path d="M 280,380 Q 290,325 295,276" class="map-path" stroke="url(#routeGradient)" />
+                                <path d="M 280,380 Q 275,300 285,222" class="map-path" stroke="url(#routeGradient)" />
+                                <!-- Rutas Internacionales (Vuelos) -->
+                                <path d="M 280,380 Q 255,260 270,150" class="map-path flight-path" stroke="url(#routeGradient)" />
+                                <path d="M 280,380 Q 400,190 560,132" class="map-path flight-path" stroke="url(#routeGradient)" />
+                                <path d="M 280,380 Q 550,120 830,220" class="map-path flight-path" stroke="url(#routeGradient)" />
                             </svg>
 
                             <div class="map-canvas-decor">
                                 <div class="decor-region patagonia-region">
                                     <span>Cordillera de los Andes & Patagonia</span>
                                 </div>
+                                <div class="decor-region sudamerica-region">
+                                    <span>Sudamérica</span>
+                                </div>
+                                <div class="decor-region europa-region">
+                                    <span>Europa Central</span>
+                                </div>
                                 <div class="decor-region asia-region">
                                     <span>Sudeste Asiático</span>
                                 </div>
                             </div>
 
-                            <!-- Marcador 1: San Martín de los Andes -->
+                            <!-- Marcador 1: San Martín de los Andes (Hogar) -->
                             <button class="map-marker active" style="top: 63%; left: 28%;" data-location="sma"
                                 aria-label="San Martín de los Andes">
                                 <span class="marker-pulse"></span>
@@ -542,23 +557,87 @@
                                 <span class="marker-label">San Martín de los Andes</span>
                             </button>
 
-                            <!-- Marcador 2: Bariloche -->
-                            <button class="map-marker" style="top: 75%; left: 31%;" data-location="bariloche"
-                                aria-label="Bariloche">
-                                <span class="marker-pulse"></span>
-                                <span class="marker-icon"><i class="fa-solid fa-trophy"></i></span>
-                                <span class="marker-label">Bariloche</span>
-                            </button>
-
-                            <!-- Marcador 3: Caburgua, Chile -->
-                            <button class="map-marker" style="top: 60%; left: 24%;" data-location="caburgua"
+                            <!-- Marcador 2: Caburgua, Chile -->
+                            <button class="map-marker" style="top: 60%; left: 21%;" data-location="caburgua"
                                 aria-label="Caburgua, Chile">
                                 <span class="marker-pulse"></span>
                                 <span class="marker-icon"><i class="fa-solid fa-flag-checkered"></i></span>
                                 <span class="marker-label">Caburgua (Chile)</span>
                             </button>
 
-                            <!-- Marcador 4: Tailandia -->
+                            <!-- Marcador 3: Lago Espejo – Villa La Angostura -->
+                            <button class="map-marker" style="top: 69%; left: 25.5%;" data-location="lagoespejo"
+                                aria-label="Lago Espejo, Villa La Angostura">
+                                <span class="marker-pulse"></span>
+                                <span class="marker-icon"><i class="fa-solid fa-person-swimming"></i></span>
+                                <span class="marker-label">Lago Espejo (VLA)</span>
+                            </button>
+
+                            <!-- Marcador 4: Isla Huemul – Bariloche -->
+                            <button class="map-marker" style="top: 74%; left: 30.5%;" data-location="islahuemul"
+                                aria-label="Isla Huemul, Bariloche">
+                                <span class="marker-pulse"></span>
+                                <span class="marker-icon"><i class="fa-solid fa-crown"></i></span>
+                                <span class="marker-label">Isla Huemul</span>
+                            </button>
+
+                            <!-- Marcador 5: Bariloche -->
+                            <button class="map-marker" style="top: 79%; left: 35%;" data-location="bariloche"
+                                aria-label="Bariloche">
+                                <span class="marker-pulse"></span>
+                                <span class="marker-icon"><i class="fa-solid fa-trophy"></i></span>
+                                <span class="marker-label">Bariloche</span>
+                            </button>
+
+                            <!-- Marcador 6: Merlo, San Luis -->
+                            <button class="map-marker" style="top: 54%; left: 33.5%;" data-location="merlo"
+                                aria-label="Merlo, San Luis">
+                                <span class="marker-pulse"></span>
+                                <span class="marker-icon"><i class="fa-solid fa-award"></i></span>
+                                <span class="marker-label">Merlo (San Luis)</span>
+                            </button>
+
+                            <!-- Marcador 7: Ullum, San Juan -->
+                            <button class="map-marker" style="top: 51%; left: 25.5%;" data-location="ullum"
+                                aria-label="Ullum, San Juan">
+                                <span class="marker-pulse"></span>
+                                <span class="marker-icon"><i class="fa-solid fa-medal"></i></span>
+                                <span class="marker-label">Ullum (San Juan)</span>
+                            </button>
+
+                            <!-- Marcador 8: Kilómetro Vertical – San Juan -->
+                            <button class="map-marker" style="top: 46%; left: 29.5%;" data-location="kvsanjuan"
+                                aria-label="Kilómetro Vertical – San Juan">
+                                <span class="marker-pulse"></span>
+                                <span class="marker-icon"><i class="fa-solid fa-mountain"></i></span>
+                                <span class="marker-label">KV San Juan</span>
+                            </button>
+
+                            <!-- Marcador 9: Samaipata, Bolivia -->
+                            <button class="map-marker" style="top: 37%; left: 28.5%;" data-location="samaipata"
+                                aria-label="Samaipata, Bolivia">
+                                <span class="marker-pulse"></span>
+                                <span class="marker-icon"><i class="fa-solid fa-flag"></i></span>
+                                <span class="marker-label">Samaipata (Bolivia)</span>
+                            </button>
+
+                            <!-- Marcador 10: Tunja, Colombia -->
+                            <button class="map-marker" style="top: 25%; left: 27%;" data-location="tunja"
+                                aria-label="Tunja, Colombia">
+                                <span class="marker-pulse"></span>
+                                <span class="marker-icon"><i class="fa-solid fa-person-running"></i></span>
+                                <span class="marker-label">Tunja (Colombia)</span>
+                            </button>
+
+                            <!-- Marcador 11: Innsbruck / Stubai, Austria -->
+                            <button class="map-marker" style="top: 22%; left: 56%;" data-location="austria"
+                                aria-label="Innsbruck & Stubai, Austria">
+                                <span class="marker-pulse"></span>
+                                <span class="marker-icon"><i class="fa-solid fa-earth-europe"></i></span>
+                                <span class="marker-label">Innsbruck (Austria)</span>
+                            </button>
+
+                            <!-- Marcador 12: Tailandia -->
                             <button class="map-marker" style="top: 36%; left: 83%;" data-location="tailandia"
                                 aria-label="Tailandia">
                                 <span class="marker-pulse"></span>

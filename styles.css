@@ -1409,6 +1409,7 @@ button, input, textarea, select {
     inset: 0;
     width: 100%;
     height: 100%;
+    pointer-events: none;
 }
 
 .map-path {
@@ -1432,6 +1433,7 @@ button, input, textarea, select {
 .map-canvas-decor {
     position: absolute;
     inset: 0;
+    pointer-events: none;
 }
 
 .decor-region {
@@ -1444,8 +1446,10 @@ button, input, textarea, select {
     opacity: 0.6;
 }
 
-.patagonia-region { top: 30%; left: 22%; }
-.asia-region      { top: 15%; left: 72%; }
+.patagonia-region  { top: 88%; left: 20%; }
+.sudamerica-region { top: 16%; left: 20%; }
+.europa-region     { top: 12%; left: 52%; }
+.asia-region       { top: 22%; left: 78%; }
 
 .map-marker {
     position: absolute;
