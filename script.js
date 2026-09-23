@@ -16,7 +16,7 @@ const projectImages = {
         { src: "Fotos deporte/LEKT-6651.jpg", caption: "Campeona Triatlón", category: "podios" },
         { src: "Fotos deporte/JCR-6704.jpg", caption: "Descenso Técnico en Montaña", category: "trail" },
         { src: "Fotos deporte/UTMB-diegowinitzky-88.jpg", caption: "Desafío en Carrera", category: "trail" },
-        { src: "Fotos deporte/_MVP5489.jpg", caption: "Velocidad en Senderos", category: "trail" },
+        { src: "Fotos deporte/_MVP5489.avif", caption: "Velocidad en Senderos", category: "trail" },
         { src: "Fotos deporte/IMG-20260310-WA0064.jpg", caption: "Ciclismo de Ruta", category: "triatlon" },
         { src: "Fotos deporte/@jpgarcia.photo-2357.jpg", caption: "Exigencia y Concentración", category: "trail" },
         { src: "Fotos deporte/@jpgarcia.photo-2358.jpg", caption: "Paso Firme en la Senda", category: "trail" },
